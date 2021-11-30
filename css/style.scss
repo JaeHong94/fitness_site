@@ -38,6 +38,22 @@ html {
 body {
   background: $black;
 }
+section {
+  padding: 5rem 9%;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: linear-gradient(130deg, $red 93%, transparent 90%);
+  color: $white;
+  font-size: 1.7rem;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+// header
 .header {
   position: fixed;
   top: 0;
@@ -48,6 +64,7 @@ body {
   justify-content: space-between;
   padding: 0 9%;
   background: $black;
+  z-index: 999;
   .logo {
     font-weight: bolder;
     color: $white;
@@ -72,10 +89,40 @@ body {
   cursor: pointer;
   display: none;
 }
-
-
-
-
+// home section
+.home {
+  padding: 0;
+  margin-top: 6.5rem;
+  .slide {
+    min-height: 80vh;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    .content {
+      width: 60rem;
+      span {
+        font-size: 2rem;
+        color: $red;
+        display: block;
+      }
+      h3 {
+        font-size: 5rem;
+        color: $white;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+.swiper-pagination-bullet {
+  width: 2rem;
+  height: 2rem;
+  background: $white;
+  &.swiper-pagination-bullet-active {
+    background: $red;
+  }
+}
 // media queries
 @media (max-width: 991px) {
   html {
@@ -83,6 +130,17 @@ body {
   }
   .header {
     padding: 0 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  .home .slide{
+    padding: 2rem 5%;
+    .content {
+      width: 50rem;
+      h3 {
+        font-size: 4rem;
+      }
   }
 }
 @media (max-width: 768px) {
@@ -115,4 +173,5 @@ body {
   html {
     font-size: 55%;
   }
+}
 }
