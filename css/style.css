@@ -476,6 +476,52 @@ section {
   color: #f00;
 }
 
+.blogs .slide {
+  background: #111;
+  margin-bottom: 7rem;
+}
+.blogs .slide:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .slide .image {
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+}
+.blogs .slide .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blogs .slide .content {
+  padding: 2rem;
+}
+.blogs .slide .content .link {
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.blogs .slide .content .link a {
+  color: #f00;
+}
+.blogs .slide .content .link a:hover {
+  color: #fff;
+}
+.blogs .slide .content .link span {
+  color: #fff;
+  padding: 0 1rem;
+}
+.blogs .slide .content h3 {
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.5;
+}
+.blogs .slide .content p {
+  font-size: 1.5rem;
+  color: #aaa;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 2rem;
@@ -519,7 +565,7 @@ section {
 }
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 }
 
