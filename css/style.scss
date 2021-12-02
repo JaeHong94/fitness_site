@@ -523,6 +523,76 @@ section {
     }
   }
 }
+// footer section
+footer {
+  .box-container {
+    padding: 5rem 9%;
+    @include grid(25rem);
+    .box {
+      h3 {
+        font-size: 2.2rem;
+        color: $white;
+        padding: 1rem 0;
+      }
+      .links {
+        font-size: 1.5rem;
+        color: $light-white;
+        padding: 1rem 0;
+        display: block;
+        &:hover {
+          color: $red;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        color: $light-white;
+        padding: 1rem 0;
+        i {
+          padding-right: .5rem;
+          color: $red;
+        }
+      }
+      .share {
+        padding: 1rem 0;
+        a {
+          width: 4.5rem;
+          height: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          color: $white;
+          background: $light-bg;
+          border-radius: 50%;
+          margin-right: .5rem;
+          text-align: center;
+          &:hover {
+            background: $red;
+          }
+        }
+      }
+      form {
+        .email {
+          margin-top: 1rem;
+          width: 100%;
+          background: $light-bg;
+          padding: 1.2rem;
+          font-size: 1.5rem;
+          color: $white;
+          text-transform: none;
+        }
+      }
+    }
+  }
+}
+.credit {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+  color: $white;
+  background: $light-bg;
+  span {
+    color: $red;
+  }
+}
 @media (max-width: 768px) {
   .header {
     padding: 2rem;
